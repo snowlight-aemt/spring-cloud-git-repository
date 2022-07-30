@@ -1,0 +1,16 @@
+token:
+  expiration_time: 864000000
+  secret: user_token
+
+gateway:
+  ip: 192.168.0.5
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: '{cipher}AQBJqEWkFPCecWlLfOt4VIv8SvdOJ1pxX2ieXAkBYFwGEmJLCOfS4f3Xfv8TcYfC3pMxG9Am9FewtoWXhmHMFOrgEDMxlTAhr7xplk2kVCUR6mwjNXa3RYcRhspRRWFZoGSUJxy2+5QPCmpRVxEpqhbuEU2GKova6E16e6gQir3zcHf/XEb/BjyRPtNkmJ69Ltj3ZKKLD6n4+RMLw9oP10h8AbVtgRhDw3mAyQCfsUmGh6jTDHo4b1BtCE7+8Ckr7XMotsmiKcco+eqYupDIVO/mPcPhKxmbl/y2hsVS/pF0fMJ9OSZv2xf64GthHMztAaPx5WKHVq0cbhhxsinE7iVwIT48PHHmgTeHjBdzp2lOERpgtTeRuM0FcoBwRtqShc4='
+
+order_service:
+  url: http://127.0.0.1:8000/order-service/%s/orders
